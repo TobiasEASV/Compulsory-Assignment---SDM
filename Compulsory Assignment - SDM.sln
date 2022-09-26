@@ -8,9 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "MovieReviewer\Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "MovieReviewer\Infrastructure\Infrastructure.csproj", "{735172C8-5F6B-4F18-9C2F-B060B4046352}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7F9CAB5A-E3E2-4D8D-BD78-7C455BEAE13D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReview", "TestReview\TestReview.csproj", "{F33BBD97-DE45-4410-BD12-68E831CE60A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,12 +32,11 @@ Global
 		{735172C8-5F6B-4F18-9C2F-B060B4046352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{735172C8-5F6B-4F18-9C2F-B060B4046352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{735172C8-5F6B-4F18-9C2F-B060B4046352}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F33BBD97-DE45-4410-BD12-68E831CE60A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F33BBD97-DE45-4410-BD12-68E831CE60A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F33BBD97-DE45-4410-BD12-68E831CE60A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F33BBD97-DE45-4410-BD12-68E831CE60A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F33BBD97-DE45-4410-BD12-68E831CE60A0} = {7F9CAB5A-E3E2-4D8D-BD78-7C455BEAE13D}
 	EndGlobalSection
 EndGlobal

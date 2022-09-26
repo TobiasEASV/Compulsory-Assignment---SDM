@@ -23,6 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\MovieReviewer\API\API.csproj" />
       <ProjectReference Include="..\MovieReviewer\Application\Application.csproj" />
     </ItemGroup>
 

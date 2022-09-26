@@ -1,9 +1,18 @@
-﻿using Domain.Interfaces;
+﻿using Application.Interfaces;
+using Domain.Interfaces;
 
 namespace Application;
 
 public class Service : IService
 {
+    private IRepository _repo;
+    public Service(IRepository repo)
+    {
+        if (repo is null)
+            throw new NullReferenceException("Repository is null");
+        _repo = repo;
+    }
+
     public int GetNumberOfReviewsFromReviewer(int reviewerId)
     {
         throw new NotImplementedException();
