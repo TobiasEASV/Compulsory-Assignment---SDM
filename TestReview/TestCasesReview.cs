@@ -1,6 +1,6 @@
 namespace TestReview;
 
-public class UnitTest1
+public class TestCasesReview
 {
     [Theory]
     [InlineData()]
