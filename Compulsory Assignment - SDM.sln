@@ -1,14 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "MovieReviewer\API\API.csproj", "{15DB1881-6446-4934-8AFC-D51C99ABB851}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{15DB1881-6446-4934-8AFC-D51C99ABB851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "MovieReviewer\Application\Application.csproj", "{8322C72F-5B8F-4889-A8FA-B3212920638D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{8322C72F-5B8F-4889-A8FA-B3212920638D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "MovieReviewer\Domain\Domain.csproj", "{E206744B-AC79-4A8B-AD75-E5E55F16ED3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{E206744B-AC79-4A8B-AD75-E5E55F16ED3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "MovieReviewer\Infrastructure\Infrastructure.csproj", "{735172C8-5F6B-4F18-9C2F-B060B4046352}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{735172C8-5F6B-4F18-9C2F-B060B4046352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F67B989C-2523-4802-A7FC-B467E6972517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReviewTest", "ReviewTest\ReviewTest.csproj", "{8F1E6AE2-9D9B-413A-8F7B-666C2EE8CF6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,11 +34,12 @@ Global
 		{735172C8-5F6B-4F18-9C2F-B060B4046352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{735172C8-5F6B-4F18-9C2F-B060B4046352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{735172C8-5F6B-4F18-9C2F-B060B4046352}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDC95C75-D53B-4ACA-9150-BE1E76F0D957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1E6AE2-9D9B-413A-8F7B-666C2EE8CF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1E6AE2-9D9B-413A-8F7B-666C2EE8CF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1E6AE2-9D9B-413A-8F7B-666C2EE8CF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1E6AE2-9D9B-413A-8F7B-666C2EE8CF6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{8F1E6AE2-9D9B-413A-8F7B-666C2EE8CF6B} = {F67B989C-2523-4802-A7FC-B467E6972517}
 	EndGlobalSection
 EndGlobal

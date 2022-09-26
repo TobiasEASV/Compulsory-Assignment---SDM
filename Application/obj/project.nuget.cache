@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "S8Z2oNyA5dqHv6/QNmhwBNW/AC72Adh5HJ2nkz/EfA27Aiiw8XoqDTQoIwNqBMED9GWmP5BHjY2n7AhaMUcVBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tobia\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "C:\\Users\\tobia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512"
+  ],
+  "logs": []
+}
