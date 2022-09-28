@@ -76,8 +76,29 @@ public class TestCasesReview
 
         // Assert
         Assert.Equal(expected,result);
+    }
 
+    [Theory]
+    [InlineData(3,-1)]
+    [InlineData(1,-5.0)]
+    [InlineData(2,4.5)]
+    public void GetAverageRateFromReviewerTest(int reviewerId, int expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+        
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+            new BEReview(2, 1, 3, DateTime.Now),
+            new BEReview(2, 2, 1, DateTime.Now)
+        };
+        
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
 
+        IService service = new Service(mockRepo.Object);
+        
+        
 
     }
 }
