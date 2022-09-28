@@ -1,8 +1,10 @@
 
+using System.Diagnostics;
 using Application;
 using Application.Interfaces;
 using Domain;
 using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Moq;
 
 
@@ -46,19 +48,34 @@ public class TestCasesReview
     
     /// <summary>
     /// Test case 2.1 - 2.3
+    /// Test cases for number of reviews from reviewer					
     /// </summary>
     [Theory]
-    [InlineData(1337, 0)]
-    [InlineData(1, 1)]
-    [InlineData(2, 2)]
+    [InlineData(1337, 0)]//Reviewer with 0 reviews	
+    [InlineData(1, 1)]//Reviewer with 1 review	
+    [InlineData(2, 2)]//Reviewer with 2 reviews	
     public void GetNumberOfReviewsFromReviewerTest(int reviewerId, int expected)
     {
         // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+            new BEReview(2, 1, 3, DateTime.Now),
+            new BEReview(2, 2, 1, DateTime.Now)
+        };
+
+        
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
 
         // Act
-
+        int result = service.GetNumberOfReviewsFromReviewer(reviewerId);
 
         // Assert
+        Assert.Equal(expected,result);
 
 
 

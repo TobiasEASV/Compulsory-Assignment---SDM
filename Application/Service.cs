@@ -15,7 +15,17 @@ public class Service : IService
 
     public int GetNumberOfReviewsFromReviewer(int reviewerId)
     {
-        throw new NotImplementedException();
+        var count = 0;
+        foreach (var x in _repo.GetAll())
+        {
+            if (x.Reviewer == reviewerId)
+            {
+                count++;
+            }
+            
+        }
+
+        return count;
     }
 
     public double GetAverageRateFromReviewer(int reviewerId)

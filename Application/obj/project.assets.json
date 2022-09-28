@@ -8,14 +8,10 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-rc.1.22426.10"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -24,14 +20,10 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0-rc.1.22426.10": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -121,32 +113,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tobia\\.nuget\\packages\\": {}
+    "C:\\Users\\MadsT\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\obj\\",
+      "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\MadsT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\MadsT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj"
+            "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj"
             }
           }
         }
