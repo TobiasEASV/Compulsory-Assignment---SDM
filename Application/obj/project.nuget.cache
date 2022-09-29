@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cFnUhVp5Lz+mPIQB7v0aVKe5sDtrwWyX++4+H9JUwcuDEfAX731Fz2QiWjf15FesMwXVzdePOgYll8rBIlbVkw==",
+  "dgSpecHash": "S8Z2oNyA5dqHv6/QNmhwBNW/AC72Adh5HJ2nkz/EfA27Aiiw8XoqDTQoIwNqBMED9GWmP5BHjY2n7AhaMUcVBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MadsT\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.7.0.0-rc.1.22426.10.nupkg.sha512",
-    "C:\\Users\\MadsT\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512"
+    "C:\\Users\\tobia\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.7.0.0-rc.1.22426.10.nupkg.sha512",
+    "C:\\Users\\tobia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512"
   ],
   "logs": []
 }

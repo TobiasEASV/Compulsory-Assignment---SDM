@@ -1,11 +1,9 @@
-
-using System.Diagnostics;
 using Application;
 using Application.Interfaces;
 using Domain;
 using Domain.Interfaces;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 using Moq;
+
 
 
 namespace TestReview;
@@ -79,10 +77,10 @@ public class TestCasesReview
     }
 
     [Theory]
-    [InlineData(3,-1)]
-    [InlineData(1,-5.0)]
-    [InlineData(2,4.5)]
-    public void GetAverageRateFromReviewerTest(int reviewerId, int expected)
+    [InlineData(1, 5)]
+    [InlineData(2, 4.5)]
+    [InlineData(3, 3)]
+    public void GetAverageRateFromReviewerTest(int reviewerId, double expected)
     {
         // Arrange
         Mock<IRepository> mockRepo = new Mock<IRepository>();
@@ -90,15 +88,237 @@ public class TestCasesReview
         List<BEReview> fakeRepo = new List<BEReview>
         {
             new BEReview(1, 1, 5, DateTime.Now),
+            new BEReview(1, 1, 5, DateTime.Now),
+            
+            new BEReview(2, 1, 6, DateTime.Now),
             new BEReview(2, 1, 3, DateTime.Now),
-            new BEReview(2, 2, 1, DateTime.Now)
+            
+            new BEReview(3, 2, 4, DateTime.Now),
+            new BEReview(3, 2, 2, DateTime.Now)
         };
         
         mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
 
         IService service = new Service(mockRepo.Object);
-        
-        
 
+        // Act
+        var result = service.GetAverageRateFromReviewer(reviewerId);
+       
+        
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    [Theory]
+    [InlineData(1, 5, 2)]
+    [InlineData(2, 4, 0)]
+    [InlineData(3, 4, 1)]
+    public void GetNumberOfRatesByReviewerTest(int reviewerId, int rate, int expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+        
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+            new BEReview(1, 1, 5, DateTime.Now),
+            
+            new BEReview(2, 1, 6, DateTime.Now),
+            new BEReview(2, 1, 3, DateTime.Now),
+            
+            new BEReview(3, 2, 4, DateTime.Now),
+            new BEReview(3, 2, 2, DateTime.Now)
+        };
+        
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetNumberOfRatesByReviewer(reviewerId, rate);
+        
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    [Theory]
+    [InlineData(1, 3)]
+    [InlineData(2, 1)]
+    [InlineData(3, 1)]
+    public void GetNumberOfReviewsTest(int movieId, int expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+
+            new BEReview(2, 1, 6, DateTime.Now),
+            
+            new BEReview(3, 2, 4, DateTime.Now),
+
+            new BEReview(4, 1, 3, DateTime.Now),
+            
+            new BEReview(5, 3, 2, DateTime.Now)
+        };
+
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetNumberOfReviews(movieId);
+        
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    [Theory]
+    [InlineData(1, 4.67)]
+    [InlineData(2, 4)]
+    [InlineData(3, 2)]
+    public void GetAverageRateOfMovieTest(int movieId, double expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+
+            new BEReview(2, 1, 6, DateTime.Now),
+            
+            new BEReview(3, 2, 4, DateTime.Now),
+
+            new BEReview(4, 1, 3, DateTime.Now),
+            
+            new BEReview(5, 3, 2, DateTime.Now)
+        };
+
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetAverageRateOfMovie(movieId);
+        
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    [Theory]
+    [InlineData(1, 5, 2)]
+    [InlineData(2, 2, 0)]
+    [InlineData(3, 2, 1)]
+    public void GetNumberOfRatesTest(int movieId, int rate, int expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+
+            new BEReview(2, 1, 5, DateTime.Now),
+            
+            new BEReview(3, 2, 4, DateTime.Now),
+
+            new BEReview(4, 1, 3, DateTime.Now),
+            
+            new BEReview(5, 3, 2, DateTime.Now)
+        };
+
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetNumberOfRates(movieId, rate);
+        
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    [Fact]
+    public void GetMoviesWithHighestNumberOfTopRatesTest()
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+
+            new BEReview(2, 1, 5, DateTime.Now),
+            
+            new BEReview(3, 2, 4, DateTime.Now),
+
+            new BEReview(4, 1, 3, DateTime.Now),
+            
+            new BEReview(5, 3, 2, DateTime.Now)
+        };
+
+        var expected = new List<int>(){1};
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetMoviesWithHighestNumberOfTopRates();
+        
+        // Assert
+        Assert.Equal(expected.Count, result.Count);
+        Assert.True(1 == expected[0]);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    [Fact]
+    public void GetMostProductiveReviewersTest()
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+            new BEReview(1, 2, 5, DateTime.Now),
+            new BEReview(1, 5, 5, DateTime.Now),
+
+            new BEReview(2, 3, 5, DateTime.Now),
+            new BEReview(2, 6, 5, DateTime.Now),
+            
+            new BEReview(3, 7, 4, DateTime.Now),
+
+            new BEReview(4, 4, 3, DateTime.Now),
+            new BEReview(4, 6, 3, DateTime.Now),
+            new BEReview(4, 7, 3, DateTime.Now),
+            new BEReview(4, 9, 3, DateTime.Now),
+            new BEReview(4, 10, 3, DateTime.Now),
+            
+            new BEReview(5, 3, 2, DateTime.Now)
+        };
+
+        var expected = new List<int>()
+        {
+            4,1,2,3,4
+            
+        };
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetMostProductiveReviewers();
+        
+        // Assert
+        Assert.Equal(expected.Count, result.Count);
+        //Assert.True(1 == expected[0]);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
     }
 }
