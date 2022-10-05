@@ -133,7 +133,7 @@ public class TestData
             new List<int>() { -1}
         };
         
-        yield return new object[] //Mock data only contains reviwers with 1 review from reviewer 2	- test case 11.2
+        yield return new object[] //Mock data only contains reviewers with 1 review from reviewer 2	- test case 11.2
         {
             new List<BEReview>()
             {
@@ -159,4 +159,44 @@ public class TestData
         };
 
     }
+    
+    public static IEnumerable<Object[]> GetReviewersByMovieTestData()
+    {
+        yield return new object[] // Mock Data with 0 reviews from reviewer 3 - test case 12.1
+        {
+            
+            new List<BEReview>()
+            {
+            },
+            new BigInteger(3),
+            new List<int>() { -1}
+        };
+        
+        yield return new object[] //Mock data only contains reviewers with 1 review from reviewer 2	- test case 12.2
+        {
+            new List<BEReview>()
+            {
+                new BEReview(1, 1, 5, DateTime.Now),
+                
+            },
+            new BigInteger(1),
+            new List<int>() {1}
+        };
+        
+        yield return new object[] //Mock data with multiple reviews by reviewer 1 with movie 2 rated highest,
+            //and 1 and 3 rated equally but 3 was rated first.	- test case 12.3
+            {
+                new List<BEReview>()
+                {
+                    new BEReview(3, 2, 2, DateTime.Now.AddDays(-5)),
+                    new BEReview(1, 2, 5, DateTime.Now.AddDays(-2)),
+                    new BEReview(2, 2, 5, DateTime.Now.AddDays(-5)),
+                
+                },
+                new BigInteger(2),
+                new List<int>() {1,2,3}
+            };
+
+    }
+    
 }

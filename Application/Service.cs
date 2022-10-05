@@ -130,6 +130,17 @@ public class Service : IService
 
     public List<int> GetReviewersByMovie(int movieId)
     {
-        throw new NotImplementedException();
+        var testSource = _repo.GetAll()
+            .FindAll(review => review.Movie == movieId)
+            .OrderByDescending(review => review.Grade)
+            .ThenByDescending(review => review.ReviewDate)
+            .Select(review => review.Reviewer);
+
+        if (testSource.Count() == 0)
+        {
+            return new List<int>() { -1 };
+        }
+        
+        return testSource.ToList();
     }
 }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vpa3QuftcxR4IKP77OA8rA4OBKlelqrJJfFJhb5bP3ub43T0giIwwoAjsB0wGAkLmZT8kmULYThmSuOPmJNivg==",
+  "dgSpecHash": "dHY64y9MjSmLOBC7ybUOvJsrjEe0zVJnRCG6DHXK92LK0ifcJtxsNha4DFzxpc+Yt3It6ktkej5CSs7B/9MmcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MadsT\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512"
+    "C:\\Users\\n0m1z\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0-rc.1.22426.10\\microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512"
   ],
   "logs": []
 }

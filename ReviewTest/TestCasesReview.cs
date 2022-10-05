@@ -357,4 +357,30 @@ public class TestCasesReview
         mockRepo.Verify(repository => repository.GetAll(), Times.Once);
     }
     
+    
+    /// <summary>
+    /// Test case 12.1-12.3
+    /// Test cases for number of reviews on movie					
+    /// </summary>
+    [Theory]
+    [MemberData(nameof(TestData.GetReviewersByMovieTestData), MemberType = typeof(TestData))]
+    public void GetReviewersByMovieTest(List<BEReview> data, BigInteger movie ,List<int> expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(data);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetReviewersByMovie((int)movie);
+
+        
+        // Assert
+        Assert.True(expected.All(result.Contains) && result.All(expected.Contains));
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    
 }
