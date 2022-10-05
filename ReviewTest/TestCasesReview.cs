@@ -1,5 +1,6 @@
 
 using System.Diagnostics;
+using System.Numerics;
 using Application;
 using Application.Interfaces;
 using Domain;
@@ -159,13 +160,13 @@ public class TestCasesReview
     }
     
     /// <summary>
-    /// Test case 4.1-4.3
+    /// Test case 5.1-5.3
     /// Test cases for number of reviews on movie					
     /// </summary>
     [Theory]
-    [InlineData(3,0)]//Movie has 0 reviews	- test case 4.1
-    [InlineData(1,1)]//Movie has 1 review	- test case 4.2
-    [InlineData(2,2)]//Movie has 2 review	- test case 4.3
+    [InlineData(3,0)]//Movie has 0 reviews	- test case 5.1
+    [InlineData(1,1)]//Movie has 1 review	- test case 5.2
+    [InlineData(2,2)]//Movie has 2 review	- test case 5.3
     public void GetNumberOfReviewsOnMovieTest(int movieId, int expected)
     {
         // Arrange
@@ -193,13 +194,13 @@ public class TestCasesReview
     }
 
     /// <summary>
-    /// Test case 5.1-5.3
+    /// Test case 6.1-6.3
     /// Test cases for number of reviews on movie					
     /// </summary>
     [Theory]
-    [InlineData(3,-1)]//Movie has 0 reviews	- test case 5.1
-    [InlineData(1,3)]//Movie has 1 review with rating 3	- test case 5.2
-    [InlineData(2,4)]//Movie has 2 review with rating 3 and 5	- test case 5.3
+    [InlineData(3,-1)]//Movie has 0 reviews	- test case 6.1
+    [InlineData(1,3)]//Movie has 1 review with rating 3	- test case 6.2
+    [InlineData(2,4)]//Movie has 2 review with rating 3 and 5	- test case 6.3
     public void GetAverageRateOfMovieTest(int movieId, int expected)
     {
         // Arrange
@@ -226,14 +227,14 @@ public class TestCasesReview
     }
     
     /// <summary>
-    /// Test case 6.1-6.4
+    /// Test case 7.1-7.4
     /// Test cases for number of reviews on movie					
     /// </summary>
     [Theory]
-    [InlineData(3, 5, 0)]//Movie has 0 reviews	- test case 6.1
-    [InlineData(1, 3, 1)]//Movie has 1 review with rating 3	- test case 6.2
-    [InlineData(2, 3, 2)]//Movie has 2 review with rating 3 and 3	- test case 6.3
-    [InlineData(2, 5, 0)]//Movie has 3 review with rating 3, 3 and 4	- test case 6.4
+    [InlineData(3, 5, 0)]//Movie has 0 reviews	- test case 7.1
+    [InlineData(1, 3, 1)]//Movie has 1 review with rating 3	- test case 7.2
+    [InlineData(2, 3, 2)]//Movie has 2 review with rating 3 and 3	- test case 7.3
+    [InlineData(2, 5, 0)]//Movie has 3 review with rating 3, 3 and 4	- test case 7.4
     public void GetNumberOfRatesTest(int movieId, int rate, int expected)
     {
         // Arrange
@@ -262,7 +263,7 @@ public class TestCasesReview
 
     
     /// <summary>
-    /// Test case 7.1-7.3
+    /// Test case 8.1-8.3
     /// Test cases for number of reviews on movie					
     /// </summary>
     [Theory]
@@ -285,7 +286,7 @@ public class TestCasesReview
     }
     
     /// <summary>
-    /// Test case 8.1-8.3
+    /// Test case 9.1-9.3
     /// Test cases for number of reviews on movie					
     /// </summary>
     [Theory]
@@ -302,10 +303,54 @@ public class TestCasesReview
         // Act
         var result = service.GetMostProductiveReviewers();
 
-        /*for (int i = 0; i < result.Count; i++)
-        {
-            _testOutputHelper.WriteLine($"{result[i]} <- Result : {expected[i]} <- Expected");
-        }*/
+        
+        // Assert
+        Assert.True(expected.All(result.Contains) && result.All(expected.Contains));
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    /// <summary>
+    /// Test case 10.1-10.3
+    /// Test cases for number of reviews on movie					
+    /// </summary>
+    [Theory]
+    [MemberData(nameof(TestData.GetTopRatedMovieTestData), MemberType = typeof(TestData))]
+    public void GetTopRatedMoviesTest(List<BEReview> data, BigInteger topN ,List<int> expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(data);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetTopRatedMovies((int)topN);
+
+        
+        // Assert
+        Assert.True(expected.All(result.Contains) && result.All(expected.Contains));
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    /// <summary>
+    /// Test case 11.1-11.3
+    /// Test cases for number of reviews on movie					
+    /// </summary>
+    [Theory]
+    [MemberData(nameof(TestData.GetTopMoviesByReviewerTestData), MemberType = typeof(TestData))]
+    public void GetTopMoviesByReviewerTest(List<BEReview> data, BigInteger reviewer ,List<int> expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(data);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetTopMoviesByReviewer((int)reviewer);
+
         
         // Assert
         Assert.True(expected.All(result.Contains) && result.All(expected.Contains));

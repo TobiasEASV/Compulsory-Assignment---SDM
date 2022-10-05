@@ -104,12 +104,28 @@ public class Service : IService
 
     public List<int> GetTopRatedMovies(int amount)
     {
-        throw new NotImplementedException();
+        var testSource = _repo.GetAll().OrderByDescending(review => review.Grade).Select(review => review.Movie );
+        if (testSource.Count() == 0)
+        {
+            return new List<int>() { -1 };
+        }
+        
+        return testSource.Take(amount).ToList();
+        
+        
     }
 
     public List<int> GetTopMoviesByReviewer(int reviewerId)
     {
-        throw new NotImplementedException();
+        var testSource = _repo.GetAll()
+            .FindAll(review => review.Reviewer == reviewerId)
+            .OrderByDescending(review => review.Grade)
+            .ThenByDescending(review => review.ReviewDate)
+            .Select(review => review.Movie);
+        if (testSource.Count() == 0)
+            return new List<int>() { -1 };
+        return testSource.ToList();
+
     }
 
     public List<int> GetReviewersByMovie(int movieId)
