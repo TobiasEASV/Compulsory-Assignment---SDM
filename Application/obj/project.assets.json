@@ -73,19 +73,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tobia\\.nuget\\packages\\": {}
+    "C:\\Users\\Janwo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\obj\\",
+      "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -97,8 +97,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj"
+            "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj"
             }
           }
         }

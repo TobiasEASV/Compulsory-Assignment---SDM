@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj": {}
+    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj": {
+    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\obj\\",
+        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -70,17 +70,17 @@
         }
       }
     },
-    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj": {
+    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -92,8 +92,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj"
+              "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj"
               }
             }
           }
@@ -133,17 +133,17 @@
         }
       }
     },
-    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj": {
+    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -186,17 +186,17 @@
         }
       }
     },
-    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -208,8 +208,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj"
+              "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj"
               }
             }
           }

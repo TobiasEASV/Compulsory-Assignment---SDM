@@ -6,12 +6,20 @@ using Domain;
 using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Moq;
+using Xunit.Abstractions;
 
 
 namespace TestReview;
 
 public class TestCasesReview
 {
+
+    private readonly ITestOutputHelper _testOutputHelper;
+
+    public TestCasesReview(ITestOutputHelper testOutputHelper)
+    {
+        _testOutputHelper = testOutputHelper;
+    }
 
     /// <summary>
     /// Test Case 1.1
@@ -271,6 +279,34 @@ public class TestCasesReview
         // Act
         var result = service.GetMoviesWithHighestNumberOfTopRates();
 
+        // Assert
+        Assert.True(expected.All(result.Contains) && result.All(expected.Contains));
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    /// <summary>
+    /// Test case 8.1-8.3
+    /// Test cases for number of reviews on movie					
+    /// </summary>
+    [Theory]
+    [MemberData(nameof(TestData.GetMostProductiveReviewersTestData), MemberType = typeof(TestData))]
+    public void GetMostProductiveReviewersTest(List<BEReview> data, List<int> expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(data);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetMostProductiveReviewers();
+
+        /*for (int i = 0; i < result.Count; i++)
+        {
+            _testOutputHelper.WriteLine($"{result[i]} <- Result : {expected[i]} <- Expected");
+        }*/
+        
         // Assert
         Assert.True(expected.All(result.Contains) && result.All(expected.Contains));
         mockRepo.Verify(repository => repository.GetAll(), Times.Once);

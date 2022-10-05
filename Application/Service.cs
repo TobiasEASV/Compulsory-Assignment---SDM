@@ -77,7 +77,29 @@ public class Service : IService
 
     public List<int> GetMostProductiveReviewers()
     {
-        throw new NotImplementedException();
+        var testSource = _repo.GetAll();
+        
+        if (testSource.Count() == 0)
+            return new List<int>() { -1 };
+        
+        var returnList = new List<int>(){testSource[0].Reviewer};
+        
+        for (int i = 0; i < testSource.Count; i++)
+        {
+            //Get count of current element to before:
+            int count = testSource.Take(i+1)
+                .Count(review => review.Reviewer == testSource[i].Reviewer);
+
+            if (count > returnList[0])
+            {
+                returnList = new List<int>() { testSource[i].Reviewer };
+            } else if (count == returnList[0])
+            {
+                returnList.Add(testSource[i].Reviewer);
+            }
+        }
+
+        return returnList;
     }
 
     public List<int> GetTopRatedMovies(int amount)
