@@ -50,12 +50,17 @@ public class Service : IService
 
     public double GetAverageRateOfMovie(int movieId)
     {
-        throw new NotImplementedException();
+        var testSource = _repo.GetAll().FindAll(review => review.Movie == movieId);
+        
+        if (testSource.Count == 0)
+            return -1;
+
+        return testSource.Average(review => review.Grade);
     }
 
     public int GetNumberOfRates(int movieId, int rate)
     {
-        throw new NotImplementedException();
+        return _repo.GetAll().FindAll(review => review.Movie == movieId && review.Grade == rate).Count;
     }
 
     public List<int> GetMoviesWithHighestNumberOfTopRates()

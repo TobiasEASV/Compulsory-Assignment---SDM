@@ -184,8 +184,107 @@ public class TestCasesReview
         
     }
 
-    
-    
+    /// <summary>
+    /// Test case 5.1-5.3
+    /// Test cases for number of reviews on movie					
+    /// </summary>
+    [Theory]
+    [InlineData(3,-1)]//Movie has 0 reviews	- test case 5.1
+    [InlineData(1,3)]//Movie has 1 review with rating 3	- test case 5.2
+    [InlineData(2,4)]//Movie has 2 review with rating 3 and 5	- test case 5.3
+    public void GetAverageRateOfMovieTest(int movieId, int expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
 
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 2, 5, DateTime.Now),
+            new BEReview(2, 2, 3, DateTime.Now),
+            new BEReview(2, 1, 3, DateTime.Now)
+        };
 
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetAverageRateOfMovie(movieId);
+
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+        
+    }
+    
+    /// <summary>
+    /// Test case 6.1-6.4
+    /// Test cases for number of reviews on movie					
+    /// </summary>
+    [Theory]
+    [InlineData(3, 5, 0)]//Movie has 0 reviews	- test case 6.1
+    [InlineData(1, 3, 1)]//Movie has 1 review with rating 3	- test case 6.2
+    [InlineData(2, 3, 2)]//Movie has 2 review with rating 3 and 3	- test case 6.3
+    [InlineData(2, 5, 0)]//Movie has 3 review with rating 3, 3 and 4	- test case 6.4
+    public void GetNumberOfRatesTest(int movieId, int rate, int expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 2, 3, DateTime.Now),
+            new BEReview(2, 2, 3, DateTime.Now),
+            new BEReview(2, 2, 4, DateTime.Now),
+            new BEReview(2, 1, 3, DateTime.Now)
+        };
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetNumberOfRates(movieId, rate);
+
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+        
+    }
+
+    
+    /// <summary>
+    /// Test case 7.1-7.3
+    /// Test cases for number of reviews on movie					
+    /// </summary>
+    [Theory]
+    [InlineData(3, 5, 0)]//Movie has 0 reviews	- test case 7.1
+    [InlineData(1, 3, 1)]//Movie has 1 review with rating 3	- test case 7.2
+    [InlineData(2, 3, 2)]//Movie has 2 review with rating 3 and 3	- test case 7.3
+    public void GetMoviesWithHighestNumberOfTopRatesTest(tobias)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 2, 3, DateTime.Now),
+            new BEReview(2, 2, 3, DateTime.Now),
+            new BEReview(2, 2, 4, DateTime.Now),
+            new BEReview(2, 1, 3, DateTime.Now)
+        };
+
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        var result = service.GetNumberOfRates(movieId, rate);
+
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+        
+    }
+    
 }
