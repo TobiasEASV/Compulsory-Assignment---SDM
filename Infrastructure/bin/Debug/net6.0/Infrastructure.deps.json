@@ -196,7 +196,7 @@
       "Application/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "7.0.0-rc.1.22426.10"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-rc.1.22426.10"
         },
         "runtime": {
           "Application.dll": {}

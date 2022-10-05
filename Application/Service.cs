@@ -30,7 +30,7 @@ public class Service : IService
 
     public double GetAverageRateFromReviewer(int reviewerId)
     {
-        var testSource = _repo.GetAll().FindAll(e => e.Reviewer == reviewerId);
+        var testSource = _repo.GetAll().FindAll(review => review.Reviewer == reviewerId);
         
         if (testSource.Count == 0)
             return -1;
@@ -40,12 +40,12 @@ public class Service : IService
 
     public int GetNumberOfRatesByReviewer(int reviewerId, int rate)
     {
-        throw new NotImplementedException();
+        return _repo.GetAll().FindAll(review => review.Reviewer == reviewerId && review.Grade == rate).Count;
     }
 
     public int GetNumberOfReviews(int movieId)
     {
-        throw new NotImplementedException();
+        return _repo.GetAll().FindAll(review => review.Movie == movieId).Count;
     }
 
     public double GetAverageRateOfMovie(int movieId)

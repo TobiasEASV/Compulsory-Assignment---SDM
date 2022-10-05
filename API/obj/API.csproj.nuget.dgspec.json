@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj": {}
+    "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj": {
+    "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\API\\obj\\",
+        "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\MadsT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MadsT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -70,30 +77,37 @@
         }
       }
     },
-    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
+    "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\obj\\",
+        "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\MadsT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MadsT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj"
+              "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj"
               }
             }
           }
@@ -108,7 +122,7 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.Extensions.DependencyInjection": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0-rc.1.22426.10, )"
             }
@@ -133,22 +147,29 @@
         }
       }
     },
-    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
+    "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\MadsT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MadsT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -186,30 +207,37 @@
         }
       }
     },
-    "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Janwo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\MadsT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Janwo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MadsT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Janwo\\OneDrive\\Desktop\\Datamatiker 2021-2024\\3. Semester\\SDM\\Compulsory-Assignment---SDM\\Application\\Application.csproj"
+              "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\MadsT\\IdeaProjects\\C#\\Compulsory-Assignment---SDM\\Application\\Application.csproj"
               }
             }
           }
