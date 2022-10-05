@@ -30,7 +30,12 @@ public class Service : IService
 
     public double GetAverageRateFromReviewer(int reviewerId)
     {
-        throw new NotImplementedException();
+        var testSource = _repo.GetAll().FindAll(e => e.Reviewer == reviewerId);
+        
+        if (testSource.Count == 0)
+            return -1;
+
+        return testSource.Average(review => review.Grade);
     }
 
     public int GetNumberOfRatesByReviewer(int reviewerId, int rate)

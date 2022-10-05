@@ -51,9 +51,9 @@ public class TestCasesReview
     /// Test cases for number of reviews from reviewer					
     /// </summary>
     [Theory]
-    [InlineData(1337, 0)]//Reviewer with 0 reviews	
-    [InlineData(1, 1)]//Reviewer with 1 review	
-    [InlineData(2, 2)]//Reviewer with 2 reviews	
+    [InlineData(1337, 0)]//Reviewer with 0 reviews - test case 2.1
+    [InlineData(1, 1)]//Reviewer with 1 review - test case 2.2
+    [InlineData(2, 2)]//Reviewer with 2 reviews	- test case 2.3
     public void GetNumberOfReviewsFromReviewerTest(int reviewerId, int expected)
     {
         // Arrange
@@ -76,8 +76,46 @@ public class TestCasesReview
 
         // Assert
         Assert.Equal(expected,result);
-
-
-
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
     }
+    
+    
+    
+    
+    /// <summary>
+    /// Test case 3.1 - 3.3
+    /// Test cases for number of reviews from reviewer					
+    /// </summary>
+    [Theory]
+    [InlineData(0, -1)]//Reviewer with 0 reviews - test case 3.1
+    [InlineData(1, 5.0)]//Reviewer with 1 review - test case 3.2
+    [InlineData(2, 4.5)]//Reviewer with 2 reviews	- test case 3.3
+    public void GetAverageRateFromReviewerTest(int reviewerId, double expected)
+    {
+        // Arrange
+        Mock<IRepository> mockRepo = new Mock<IRepository>();
+
+        List<BEReview> fakeRepo = new List<BEReview>
+        {
+            new BEReview(1, 1, 5, DateTime.Now),
+            new BEReview(2, 1, 4, DateTime.Now),
+            new BEReview(2, 2, 5, DateTime.Now)
+        };
+
+        
+        mockRepo.Setup(repository => repository.GetAll()).Returns(fakeRepo);
+
+        IService service = new Service(mockRepo.Object);
+
+        // Act
+        double result = service.GetAverageRateFromReviewer(reviewerId);
+
+        // Assert
+        Assert.Equal(expected,result);
+        mockRepo.Verify(repository => repository.GetAll(), Times.Once);
+    }
+    
+    
+
+
 }

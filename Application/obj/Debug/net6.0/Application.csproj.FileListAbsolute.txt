@@ -43,3 +43,18 @@ C:\Users\MadsT\IdeaProjects\C#\Compulsory-Assignment---SDM\Application\obj\Debug
 C:\Users\MadsT\IdeaProjects\C#\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\MadsT\IdeaProjects\C#\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\MadsT\IdeaProjects\C#\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\bin\Debug\net6.0\Application.dll
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\bin\Debug\net6.0\Domain.dll
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\bin\Debug\net6.0\Domain.pdb
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.dll
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\Janwo\OneDrive\Desktop\Datamatiker 2021-2024\3. Semester\SDM\Compulsory-Assignment---SDM\Application\obj\Debug\net6.0\ref\Application.dll
