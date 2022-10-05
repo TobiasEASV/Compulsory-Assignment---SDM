@@ -75,7 +75,7 @@ public interface IService
     List<int> GetTopMoviesByReviewer(int reviewer);
     
     /// <summary>
-    /// Get the reviewers how has review the movie
+    /// Get the reviewers who has review the movie
     /// </summary>
     /// <param name="movie">Id from a movie</param>
     /// <returns>Return a list of reviewers decreasing order (orderBy Rate first, and Date secondly)</returns>

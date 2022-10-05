@@ -14,9 +14,4 @@ public class Repository : IRepository
     {
         throw new NotImplementedException();
     }
-
-    public void AddMany(List<BEReview> Review)
-    {
-        throw new NotImplementedException();
-    }
 }

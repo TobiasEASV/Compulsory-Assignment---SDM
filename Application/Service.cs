@@ -46,15 +46,19 @@ public class Service : IService
 
     public List<int> GetMoviesWithHighestNumberOfTopRates()
     {
-        var movieList = new List<int>();
-        foreach (var review in _repo.GetAll().FindAll(review => review.Grade == 5))
+        var movies = _repo.GetAll().FindAll(review => review.Grade == 5);
+        
+        if (movies.Count == 0) return new List<int>() { -1 };
+            
+        var returnList = new List<int>();
+        foreach (var review in movies)
         {
-            if (!movieList.Contains(review.Movie))
+            if (!returnList.Contains(review.Movie))
             {
-                movieList.Add(review.Movie);
+                returnList.Add(review.Movie);
             }
         }
-        return movieList;
+        return returnList;
     }
 
     public List<int> GetMostProductiveReviewers()
@@ -67,21 +71,20 @@ public class Service : IService
         var orderReviews = allReview.OrderBy(review => review.Reviewer);
         foreach (var review in allReview) { if (!setList.Contains(review.Reviewer))setList.Add(review.Reviewer);}
         
-        
-        foreach (var reviewer in setList)
+        foreach (var setReview in setList)
         {
-            var c = 0;
+            var count = 0;
             foreach (var orderReview in orderReviews)
             {
-                if (orderReview.Reviewer == reviewer)
+                if (orderReview.Reviewer == setReview)
                 {
-                    c++;
+                    count++;
                 }
             }
-            dictList.Add(reviewer,c);
+            dictList.Add(setReview,count);
         }
         
-        var sortedDict = from entry in dictList orderby entry.Value ascending select entry;
+        var sortedDict = from entry in dictList orderby entry.Value descending select entry;
         
         
         foreach (var keyValuePair in sortedDict)
@@ -89,21 +92,45 @@ public class Service : IService
             productiveReviewerList.Add(keyValuePair.Key);
         }
         return productiveReviewerList;
-
     }
 
     public List<int> GetTopRatedMovies(int amount)
     {
-        throw new NotImplementedException();
+        var sortReview = _repo.GetAll().OrderByDescending(review => review.Grade).ThenBy(review => review.ReviewDate);
+        var listOfRate = new List<int>();
+
+        foreach (var review in sortReview.Take(amount))
+        {
+            listOfRate.Add(review.Movie);
+        }
+        return listOfRate;
     }
 
     public List<int> GetTopMoviesByReviewer(int reviewerId)
     {
-        throw new NotImplementedException();
+        var sortReview = _repo.GetAll().Where(review => review.Reviewer == reviewerId && review.Grade == 5)
+            .OrderByDescending(review => review.Movie);
+        
+        var listOfRate = new List<int>();
+
+        foreach (var review in sortReview)
+        {
+            listOfRate.Add(review.Movie);
+        }
+        return listOfRate;
     }
 
     public List<int> GetReviewersByMovie(int movieId)
     {
-        throw new NotImplementedException();
+        var sortReview = _repo.GetAll().Where(review => review.Movie == movieId)
+            .OrderByDescending(review => review.Reviewer);
+        
+        var listOfRate = new List<int>();
+
+        foreach (var review in sortReview)
+        {
+            listOfRate.Add(review.Reviewer);
+        }
+        return listOfRate;
     }
 }

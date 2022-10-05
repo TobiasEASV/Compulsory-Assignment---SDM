@@ -9,5 +9,4 @@ public interface IRepository
     List<BEReview> GetAll();
 
     void Add(BEReview[]  Review);
-    void AddMany(List<BEReview> Review);
 }
