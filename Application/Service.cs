@@ -65,7 +65,14 @@ public class Service : IService
 
     public List<int> GetMoviesWithHighestNumberOfTopRates()
     {
-        throw new NotImplementedException();
+        var testSource = _repo.GetAll().FindAll(review => review.Grade == 5).Select(review => review.Movie).ToList();
+
+        if (testSource.Count == 0)
+        {
+            return new List<int>() { -1 };
+        }
+        
+        return testSource;
     }
 
     public List<int> GetMostProductiveReviewers()

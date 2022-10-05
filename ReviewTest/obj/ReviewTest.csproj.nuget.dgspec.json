@@ -1,40 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\ReviewTest\\ReviewTest.csproj": {}
+    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\ReviewTest\\ReviewTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\API\\API.csproj": {
+    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\n0m1z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\API\\obj\\",
+        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\n0m1z\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -77,37 +70,30 @@
         }
       }
     },
-    "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
+    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\n0m1z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Application\\obj\\",
+        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\n0m1z\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj"
+              "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj"
               }
             }
           }
@@ -147,29 +133,22 @@
         }
       }
     },
-    "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj": {
+    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\n0m1z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\n0m1z\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -207,37 +186,30 @@
         }
       }
     },
-    "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\n0m1z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\n0m1z\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\Application\\Application.csproj"
+              "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\Application\\Application.csproj"
               }
             }
           }
@@ -287,37 +259,30 @@
         }
       }
     },
-    "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\ReviewTest\\ReviewTest.csproj": {
+    "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\ReviewTest\\ReviewTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\ReviewTest\\ReviewTest.csproj",
+        "projectUniqueName": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\ReviewTest\\ReviewTest.csproj",
         "projectName": "ReviewTest",
-        "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\ReviewTest\\ReviewTest.csproj",
-        "packagesPath": "C:\\Users\\n0m1z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\ReviewTest\\obj\\",
+        "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\ReviewTest\\ReviewTest.csproj",
+        "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\ReviewTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\n0m1z\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\tobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\API\\API.csproj": {
-                "projectPath": "C:\\Users\\n0m1z\\RiderProjects\\Compulsory-Assignment---SDM\\API\\API.csproj"
+              "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj": {
+                "projectPath": "C:\\Users\\tobia\\OneDrive\\Datamatilker  - EASV 3 Semester\\C# - programmer\\Compulsory Assignment - SDM\\API\\API.csproj"
               }
             }
           }
