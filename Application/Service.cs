@@ -81,25 +81,25 @@ public class Service : IService
         
         if (testSource.Count() == 0)
             return new List<int>() { -1 };
-        
-        var returnList = new List<int>(){testSource[0].Reviewer};
-        
+
+        var returnDic = new Dictionary<int, int>(){{0, 0}};
+
         for (int i = 0; i < testSource.Count; i++)
         {
             //Get count of current element to before:
             int count = testSource.Take(i+1)
                 .Count(review => review.Reviewer == testSource[i].Reviewer);
 
-            if (count > returnList[0])
+            if (count > returnDic.First().Value)
             {
-                returnList = new List<int>() { testSource[i].Reviewer };
-            } else if (count == returnList[0])
+                returnDic = new Dictionary<int, int>(){{testSource[i].Reviewer, count}};
+            } else if (count == returnDic.First().Value)
             {
-                returnList.Add(testSource[i].Reviewer);
+                returnDic.Add(testSource[i].Reviewer, count);
             }
         }
 
-        return returnList;
+        return returnDic.Keys.ToList();
     }
 
     public List<int> GetTopRatedMovies(int amount)
