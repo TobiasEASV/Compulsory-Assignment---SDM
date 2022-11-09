@@ -37,7 +37,7 @@ public class TestCasesReview
 
         // Assert
         Assert.NotNull(service);
-        Assert.True(service is Service);
+        Assert.True(service is IService);
     }
     
     /// <summary>
